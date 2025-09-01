@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) and (max-width: 1220px) {
+    
+    section#login {
+        width: 70vw;
+        height: 500px;
+    }
+}
+
+@media screen and (min-width: 1220px) {
+
+    section#login {
+        
+        width: 30vw;
+        height: 70vh;
+    }
+
+div#desktop {
+    display: block;
+    text-align: center;
+}
+
+div#desktop > p {
+    
+    text-align: justify;
+}
+    
+}

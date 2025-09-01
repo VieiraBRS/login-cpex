@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login CPEX</title>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/mediaquery.css">
 </head>
 <body>
     <header>
@@ -13,26 +13,43 @@
     </header>
 
     <main>
-        <section>
-            <div class="formularios">
-                <img src="imagens/logo-cpex.png" alt="logo CPEX">
-                <h1>INFORMAÇÕES PESSOAIS</h1>
-
-                <p>
-                    <form action="login.php" method="get" >
-                    <label for="icpf">CPF</label>
-                    <input type="number" name="" id="icpf" required>
-                </p>
-
-                <p>
-                    <label for="isenha">Senha</label>
-                    <input type="password" name="" id="isenha" required>
-                </p>
-                </form>
+        <section id="login">
+            <div id="imagem">
+                
             </div>
-    
-            <div>
+            <div id="formulario">
+                <h1>INFORMAÇÕES PESSOAIS</h1>
+                <hr>
 
+                <form action="login.php" method="post" autocomplete="on">
+                    <div class="campo">
+                        <label for="icpf">CPF</label>
+                        <input type="number" name="" id="icpf" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="isenha">Senha</label>
+                        <input type="password" name="" id="isenha" required>
+                    </div>
+                <input type="submit" value="Entrar">
+                <a id="esqueci" href="esqueci.html">Esqueci a senha ou 1° acesso</a>
+
+                <div id="desktop">
+                    <hr>
+                    <h2>COMUNICADO IMPORTANTE</h2>
+                    <p>
+                         A senha de acesso ao contracheque e ao EBconsig, por motivo de segurança, agora tem validade.
+                    </p>
+                    
+                    <p>
+                        Clique em "Esqueci a senha ou 1º acesso" e siga o passo a passo para obter uma nova senha.
+                    </p>
+                    
+                    <p>
+                        Caso não receba o e-mail com a senha provisória, verifique sua caixa de SPAM ou procure a sua OM de vinculação para atualizar o e-mail cadastrado.
+                    </p>
+                </div>
+                </form>
             </div>
         </section>
     </main>
