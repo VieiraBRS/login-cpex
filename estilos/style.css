@@ -90,3 +90,6 @@ form >a#esqueci:hover {
     text-decoration: underline;
 }
 
+div#desktop {
+    display: none;
+}
