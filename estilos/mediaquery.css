@@ -1,6 +1,19 @@
 @charset "UTF-8";
 
 
+@media screen and (min-width: 770px) and (max-width: 1220px) { 
+
+section#login { 
+    width: 40vw;
+    height: 70vh;
+}
+
+div#desktop {
+    display: none;
+}
+
+}
+
 @media screen and (min-width: 1220px) {
 
     section#login {
